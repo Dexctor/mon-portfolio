@@ -1,0 +1,337 @@
+// Définition des variables
+$font-nav: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+$font-content: 'Space Grotesk', sans-serif;
+$green: #64ffda;
+$nav-height: 100px;
+$slate: #8892b0;
+$blue: #12da9a;
+
+// Réinitialisation
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(225deg, #0d2447 0%, #12346a 100%);
+
+    counter-reset: item;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", ; // Vous pouvez convertir ceci en une variable SCSS si nécessaire
+    color: $slate;
+    line-height: 1.3;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.1rem; // Ajustez la distance entre les cartes
+    padding: 2.1rem;
+
+}
+
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0000004a;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: rgb(20 31 46 / 87%);
+    box-shadow: 0px 0px 20px 4px #051120;
+    padding-top: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 50px;
+
+
+    li {
+        color: aliceblue;
+        padding: 20px;
+        text-decoration: none;
+        list-style: none;
+        margin: 10px;
+        font-family: $font-nav;
+        border-bottom: 1px solid transparent;
+        transition: all 1s ease;
+        position: relative; // Ajouté pour la position de l'infobulle
+        transition: 1s ease;
+
+
+        &:hover {
+            color: $green;
+            border-bottom: 1px solid $green;
+
+            &::after {
+                content: attr(data-tooltip);
+                position: absolute;
+                bottom: 95%;
+                left: 50%;
+                transform: translateX(-50%);
+                white-space: nowrap;
+                padding: 5px 8px;
+                color: #fff;
+                background-color: #000000f3;
+                border-radius: 4px;
+                font-size: 14px;
+                z-index: 1;
+                opacity: 0, 2;
+                visibility: hidden;
+                transition: opacity 0.3s, visibility 0.3s;
+                color: #12da9b70;
+            }
+        }
+
+        &:hover::after {
+            opacity: 1;
+            visibility: visible;
+            transition: 1s ease;
+        }
+
+        &::before {
+            counter-increment: item;
+            content: "0" counter(item) ".";
+            color: $green;
+            margin-right: 5px;
+            font-family: $font-nav;
+            font-size: 14px;
+            transition: 1s ease
+        }
+    }
+}
+
+
+#resume {
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0);
+    color: $green;
+    border: 1px solid $green;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 1;
+
+    &:hover {
+        background-color: rgba(100, 255, 218, 0.1);
+        outline: none;
+        transition: 0.3s;
+    }
+}
+
+
+/* Contenu Section 1 */
+.eEjAsd {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    height: 100vh;
+    padding: 0px;
+
+    h3 {
+        margin-top: 5px;
+        color: $slate;
+        line-height: 0.9;
+        margin-bottom: 10px;
+    }
+
+    .big-heading {
+        margin: 0px;
+        font-size: clamp(40px, 8vw, 80px);
+    }
+
+    .chevron {
+        color: #64ffda;
+    }
+
+    .light {
+        color: #ccd6f6;
+    }
+
+    p {
+        max-width: 540px;
+        margin: 20px 0px 50px;
+        font-family: $font-content;
+        line-height: 1.5rem;
+    }
+
+    .spanColor,
+    .spanColor2,
+    .spanColor3 {
+        color: $green;
+    }
+}
+
+/*parallax*/
+
+.parallax__layer {
+    will-change: transform;
+}
+
+
+main {
+    margin: 0px;
+    
+
+
+    .introduction {
+        display: flex;
+        justify-content: center;
+        align-items: normal;
+    }
+
+    .main.fillHeight {
+        padding: 0px 300px;
+    }
+
+    .counter {
+        counter-reset: section 0;
+    }
+
+    h2,
+    h3 {
+        font-family: $font-content;
+    }
+
+    .salut h1 {
+        color: $green;
+        font-weight: 500;
+        margin: 0px 0px 30px 4px;
+        font-family: $font-nav;
+    }
+}
+
+.eEjAsd .email-link {
+    color: $green;
+    background-color: transparent;
+    border: 1px solid $green;
+    font-family: $font-nav;
+    padding: 1.25rem 1.75rem;
+    font-size: var(--fz-sm); // Convertissez ceci en une variable SCSS si nécessaire
+    border-radius: 4px;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:hover {
+        background-color: rgba(100, 255, 218, 0.1);
+        outline: none;
+        transition: 0.3s;
+    }
+}
+
+/*animation curseur*/
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1em;
+    background-color: currentColor;
+    vertical-align: text-bottom;
+    animation: blink 1s step-end infinite;
+}
+
+
+/* compétence */
+.skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crée deux colonnes */
+    gap: 20px; /* Espacement entre les cartes */
+    padding: 20px; /* Espacement autour de la grille */
+}
+.skills-section {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Assurez-vous que le conteneur parent occupe toute la largeur */
+
+    .skills-title {
+        margin-bottom: 20px;
+        font-size: 2em;
+        
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+        color: #64ffda;
+    }
+
+    .skills-container {
+        display: grid;
+        height: 15rem;
+        gap: 20px;
+        transition: 0.5s ease-in;
+        /* Pas besoin de définir la largeur ici, elle est déjà à 100% par défaut */
+    }
+    .skills-container:hover{
+        box-shadow: 0px 0px 16px 8px #0003;
+        transition: 0.5s ease-in;
+    }
+
+    .skill-card {
+        border: 1px solid rgba(218, 11, 255, 0.168);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 1px 1px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        background-color: #05112098;
+        /* Retirer width: 100% pour permettre à la grille de gérer la largeur */
+
+
+        h3 {
+            margin-bottom: 15px;
+            color: #ffffff;
+            text-transform: capitalize;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 10px;
+                color: #555;
+            }
+           
+        }
+    }
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    align-items: center;
+}
+
+.tech-grid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tech-grid div span {
+    margin-top: 5px;
+}
+
+

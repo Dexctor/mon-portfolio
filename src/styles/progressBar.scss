@@ -1,0 +1,17 @@
+.progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color:  #0a192f; // Couleur de fond de la barre de progression
+    z-index: 2;
+  }
+  
+  .progress-bar {
+    transition: height 0.3s ease;
+    width: 100%;
+    height: 0;
+    background-color: #13fac4; // Couleur de la barre de progression
+  }
+  
