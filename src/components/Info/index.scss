@@ -3,6 +3,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 500px;
     margin-bottom: 4rem;
+
     .container {
         padding: 20px 0;
         width: 50%;
@@ -22,64 +23,65 @@
 
 
     }
-
 }
 
-    @media only screen and (min-width: 540px) {
-        .info {
+@media only screen and (min-width: 540px) {
+    .info {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .container {
             padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-            .container {
-                padding: 20px;
-                
-                .title {
-                    font-size: 2.8rem;
-                    margin-bottom: 1rem;
-                }
+
+            .title {
+                font-size: 2.8rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .info {
+        .container {
+            padding: 20px;
+            width: 50%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .info {
+        .container {
+            padding: 20px;
+            border-left: #111111 1px solid;
+            width: 90%;
+
+            .title {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
 
                 p {
                     font-size: 1.4rem;
                 }
-
             }
         }
     }
+}
 
-    @media only screen and (max-width: 800px) {
-        .info {
-            .container {
-                padding: 20px;
-                width: 50%;
-            }
+@media only screen and (min-width: 1400px) {
+    .info {
+        .container {
+            height: auto;
+            padding: 20px;
         }
     }
-
-    @media only screen and (max-width: 1024px) {
-        .info {
-            .container {
-                padding: 20px;
-                border-left: #111111 1px solid;
-                width: 90%;
-                .title {
-                    font-size: 1.5rem;
-                    margin-bottom: 1rem;
-
-                    p {
-                        font-size: 1.4rem;
-                    }
-                }
-            }
-        }
-    }
-
-    @media only screen and (min-width: 1400px) {
-        .info {
-            .container {
-                height: auto;
-                padding: 20px;
-            }
-        }
-    }
+}

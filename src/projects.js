@@ -22,7 +22,7 @@ const projects = [
         image: sophieBluelImage,
         link: 'https://github.com/Dexctor/Portfolio-architecte-sophie-bluel',
         description: 'Rendre un site statique, dynamique grace à Javascript, Ajout de filtres pour les travaux, crée la page de connexion, créée une authentification utilisateur, ajouter, supprimer, modifier des travaux.',
-        problematique: "'ai rencontré plusieurs problèmes avec Visual Studio Code et le serveur Node.js, ce qui provoquait un problème de rafraîchissement lors de l'ajout d'un travail. Heureusement, j'ai pu résoudre cette erreur grâce à des recherches approfondies et en partageant mes problèmes avec d'autres étudiants.."
+        problematique: "J'ai rencontré plusieurs problèmes avec Visual Studio Code et le serveur Node.js, ce qui provoquait un problème de rafraîchissement lors de l'ajout d'un travail. Heureusement, j'ai pu résoudre cette erreur grâce à des recherches approfondies et en partageant mes problèmes avec d'autres étudiants.."
     },
 
     {
