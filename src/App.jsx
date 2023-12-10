@@ -13,16 +13,13 @@ import ContactSection from './components/Contact/index.jsx';
 function App() {
   return (
     <div className="App">
-      
       <Header />
       <main className="main fillHeight counter">
         <HomePage />
         <Scroll >
           <Info />
         </Scroll>
-       
           <Projects />
- 
         <Scroll>
           <Services />
         </Scroll>
