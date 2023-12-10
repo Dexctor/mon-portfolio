@@ -24,7 +24,7 @@ const Portfolio = () => {
                                 <span className="project-technology">{project.technology}</span>
                                 <p className="project-description"> Description : <br /><br />{project.description}</p>
                                 <p className="project-problematique"> <h4> Problématique : </h4> {project.problematique}</p>
-                                <a href={project.link} className="link-button">Voir </a>
+                                <a href={project.link} className="link-button" target='_blank'>Voir </a>
                             </div>
                         </div>
                     ))}

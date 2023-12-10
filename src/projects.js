@@ -22,7 +22,7 @@ const projects = [
         image: sophieBluelImage,
         link: 'https://github.com/Dexctor/Portfolio-architecte-sophie-bluel',
         description: 'Rendre un site statique, dynamique grace à Javascript, Ajout de filtres pour les travaux, crée la page de connexion, créée une authentification utilisateur, ajouter, supprimer, modifier des travaux.',
-        problematique: "Plusieurs soucis rencontraient avec visual code et le serveur Node js qui causait un souci de rafraichissement lors de l'ajout d'un travail. La recherche et le partage entre étudiants m’ont permis de trouver l'erreur."
+        problematique: "'ai rencontré plusieurs problèmes avec Visual Studio Code et le serveur Node.js, ce qui provoquait un problème de rafraîchissement lors de l'ajout d'un travail. Heureusement, j'ai pu résoudre cette erreur grâce à des recherches approfondies et en partageant mes problèmes avec d'autres étudiants.."
     },
 
     {
@@ -32,7 +32,7 @@ const projects = [
         image: ninaCarducciImage,
         link: 'https://github.com/Dexctor/Nina-Carducci-P5',
         description: 'Améliorer un site photographe en optimisant les images, en utilisant les bonnes pratique du web et du SEO pour un meilleur référencement.',
-        problematique: "Pas de soucis majeurs dans ce projet, il suffit de suivre les cours sur l'optimisation et améliorer le code de manière sémantique avec les bonnes pratique du web"
+        problematique: "Ce projet ne m'a pas posé de problèmes majeurs. Il a simplement fallu suivre les cours sur l'optimisation et améliorer le code en respectant les bonnes pratiques du web, en le rendant plus sémantique."
     },
     {
         categories: ['Projet Formation'],
@@ -50,7 +50,7 @@ const projects = [
         image: grimoireImage,
         link: 'https://github.com/Dexctor/P7-web-livres',
         description: "Premier projet en Backend avec Express.js. Création d'une application CRUD : CREATE, READ, UPDATE, DELETE d'un site de notation de livres.",
-        problematique:"Des soucis rencontraient pour la compréhension du backend et des contrôlé. Suivre les cours m'a aidé, ainsi que des exemples concrets avec mon mentor"
+        problematique:"J'ai rencontré des difficultés pour comprendre le fonctionnement du backend et des contrôleurs. Heureusement, suivre les cours m'a beaucoup aidé, tout comme la mise en pratique avec des exemples concrets sous la guidance de mon mentor."
     },
     {
         categories: ['Projet Alternance '],
@@ -59,7 +59,7 @@ const projects = [
         image: leclosImage,
         link: 'https://www.leclosdesmauves.com/',
         description:" Projet d'alternance, création d'un site de réservation pour 4 gîtes en Ardèche avec l'aide du CMS wordpress et Elémentor Pro",
-        problematique:"Pas mal de soucis rencontrer pour ce projet. ne connaissant pas vraiment Wordpress j'ai du le prendre en main ainsi que Elémentor Pro. Plusieur tutoriel ainsi que du bon sens m'on permis de réaliser ce site pendant ma formation"
+        problematique:"J'ai fait face à divers défis lors de la réalisation de ce projet. Étant relativement peu familier avec WordPress, j'ai dû acquérir des compétences dans son utilisation, ainsi que dans l'utilisation d'Elementor Pro. Cependant, grâce à plusieurs tutoriels et à mon sens du débrouillardise, j'ai réussi à concevoir ce site tout en suivant ma formation."
     },
     
 
