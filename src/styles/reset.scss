@@ -1,0 +1,11 @@
+// Réinitialisation
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+.App{
+margin: 0;
+padding: 0;
+
+}

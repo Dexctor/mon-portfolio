@@ -1,0 +1,35 @@
+.contact-section {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #111111d8;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 15px;
+    color: #FFFB08;
+    font-size: 2.7rem;
+    
+  }
+  p{
+    color: white;
+}
+  .contact-section a {
+    display: inline-block;
+    background-color:  #008BFF;
+    color: rgb(0, 0, 0);
+    padding: 20px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-section a:hover {
+    background-color: #FFFB08;
+  }
+  
