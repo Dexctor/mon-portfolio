@@ -1,6 +1,10 @@
-import './index.scss'
-import projects from '../../projects'
+// Importation du fichier de styles
+import './index.scss';
 
+// Importation du module 'projects' contenant les données des projets
+import projects from '../../projects';
+
+// Composant Portfolio
 const Portfolio = () => {
     return (
         <div className="portfolio">
@@ -11,6 +15,7 @@ const Portfolio = () => {
                 </div>
           
                 <div className="projects">
+                    {/* Boucle de mapping sur les projets pour les afficher */}
                     {projects.map((project, index) => (
                         <div key={index} className="project-card">
                             <img src={project.image} alt={project.title} className="project-image" />
@@ -24,11 +29,9 @@ const Portfolio = () => {
                         </div>
                     ))}
                 </div>
-                
             </div>
         </div>
     );
 };
-
 
 export default Portfolio;

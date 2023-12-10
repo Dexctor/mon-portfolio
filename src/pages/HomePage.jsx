@@ -1,4 +1,4 @@
-
+// Importation des dépendances nécessaires
 import { motion } from 'framer-motion';
 import 'font-awesome/css/font-awesome.min.css';
 import './index.scss';
@@ -9,7 +9,7 @@ import particlesOptions from "../particules.js";
 
 
 
-
+// Composant Home
 const Home = () => {
     
 
