@@ -23,7 +23,7 @@ const Portfolio = () => {
                                 <h3 className="project-title">{project.title}</h3>
                                 <span className="project-technology">{project.technology}</span>
                                 <p className="project-description"> Description : <br /><br />{project.description}</p>
-                                <p className="project-problematique"> <h4> Problématique : </h4> {project.problematique}</p>
+                                <p className="project-problematique"> Problématique : <br /> {project.problematique}</p>
                                 <a href={project.link} className="link-button" target='_blank' rel="noreferrer noopener">Voir </a>
                             </div>
                         </div>
