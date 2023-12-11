@@ -18,13 +18,13 @@ const Portfolio = () => {
                     {/* Boucle de mapping sur les projets pour les afficher */}
                     {projects.map((project, index) => (
                         <div key={index} className="project-card">
-                            <img src={project.image} alt={project.title} className="project-image" />
+                            <img src={project.image} alt={`${project.title} - project_${index + 1}`} className="project-image" />
                             <div className="project-info">
                                 <h3 className="project-title">{project.title}</h3>
                                 <span className="project-technology">{project.technology}</span>
                                 <p className="project-description"> Description : <br /><br />{project.description}</p>
                                 <p className="project-problematique"> <h4> Problématique : </h4> {project.problematique}</p>
-                                <a href={project.link} className="link-button" target='_blank'>Voir </a>
+                                <a href={project.link} className="link-button" target='_blank' rel="noreferrer noopener">Voir </a>
                             </div>
                         </div>
                     ))}

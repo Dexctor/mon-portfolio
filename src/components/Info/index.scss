@@ -1,87 +1,84 @@
 .info {
     background-color: #111111;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     height: 500px;
     margin-bottom: 4rem;
-
+  
     .container {
-        padding: 20px 0;
-        width: 50%;
-        border-left: 2px solid #FFFB08;
-
-        .title {
-            color: #FFFB08;
-            font-size: 2.3rem;
-            margin-bottom: 1rem;
-            line-height: 2rem;
-
-            p {
-                font-size: 1.2rem;
-                color: #ffffff;
-            }
+      padding: 20px 0;
+      width: 50%;
+      border-left: 2px solid #fffb08;
+  
+      .title {
+        color: #fffb08;
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+        line-height: 2rem;
+  
+        p {
+          font-size: 1.2rem;
+          color: #ffffff;
         }
-
-
+      }
     }
-}
-
-@media only screen and (min-width: 540px) {
+  }
+  
+  @media only screen and (min-width: 540px) {
     .info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .container {
         padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .container {
-            padding: 20px;
-
-            .title {
-                font-size: 2.8rem;
-                margin-bottom: 1rem;
-            }
-
-            p {
-                font-size: 1.4rem;
-            }
-
+  
+        .title {
+          font-size: 2.8rem;
+          margin-bottom: 1rem;
         }
-        
+  
+        p {
+          font-size: 1.4rem;
+        }
+      }
     }
-}
-
-@media only screen and (max-width: 800px) {
+  }
+  
+  @media only screen and (max-width: 800px) {
     .info {
-        .container {
-            padding: 20px;
-            width: 50%;
-        }
+      .container {
+        padding: 20px;
+        width: 50%;
+      }
     }
-}
-
-@media only screen and (max-width: 1024px) {
+  }
+  
+  @media only screen and (max-width: 1024px) {
     .info {
-        .container {
-            padding: 20px;
-            border-left: #111111 1px solid;
-            width: 90%;
-
-            .title {
-                font-size: 1.5rem;
-                margin-bottom: 1rem;
-
-                p {
-                    font-size: 1.4rem;
-                }
-            }
+      .container {
+        padding: 20px;
+        border-left: #111111 1px solid;
+        width: 90%;
+  
+        .title {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+  
+          p {
+            font-size: 1.4rem;
+          }
         }
+      }
     }
-}
-
-@media only screen and (min-width: 1400px) {
+  }
+  
+  @media only screen and (min-width: 1400px) {
     .info {
-        .container {
-            height: auto;
-            padding: 20px;
-        }
+      .container {
+        height: auto;
+        padding: 20px;
+      }
     }
-}
+  }
+  

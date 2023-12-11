@@ -1,3 +1,14 @@
+#tsparticles {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
 .home {
   padding-top: 90px;
   font-family: Space Grotesk, sans-serif;
@@ -12,10 +23,10 @@
       font-size: 1rem;
       text-transform: uppercase;
       letter-spacing: 5px;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
 
       .enderscore {
-        color: #FFFB08;
+        color: #fffb08;
       }
     }
 
@@ -24,22 +35,15 @@
       font-size: 2.5rem;
       font-weight: 700;
       line-height: 1;
-      margin-bottom: .9rem;
+      margin-bottom: 0.9rem;
       text-transform: uppercase;
 
-      &.experience {
-        color: #008bff;
-
-        div {
-          z-index: -1 !important;
-          height: 40px;
-          display: flex;
-          align-items: center;
-        }
-
-
+      div {
+        z-index: -1 !important;
+        height: 40px;
+        display: flex;
+        align-items: center;
       }
-
     }
   }
 }
@@ -53,41 +57,34 @@
 }
 
 .container-link {
-
   margin-top: 4.5rem;
 
   .email-link {
-
     padding: 25px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     color: rgb(255, 255, 255);
     border-radius: 5px;
-    border: 1px solid #3b3b3b;
+    border: 3px solid #3b3b3b;
     transition-duration: 0.3s;
 
     &:hover {
-      background-color: #FFFB08;
+      background-color: #fffb08;
       color: #000;
-      border: 1px solid #FFFB08;
+      border: 3px solid #fffb08;
       transition-duration: 0.3s;
     }
   }
-
 }
 
 @media only screen and (min-width: 640px) {
   .home {
     .container {
-
-      
       .title {
         font-size: 3.5rem;
 
         &.experience {
-
-
           div {
             height: 80px;
           }
@@ -113,7 +110,6 @@
       .title {
         font-size: 4rem;
         line-height: 1.2;
-
       }
     }
   }

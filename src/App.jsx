@@ -1,6 +1,6 @@
 import './App.scss';
 import React from 'react';
-import Scroll from './components/Scroll-effect/index.jsx'
+
 
 import Header from './components/Header/Header.jsx';
 import HomePage from './pages/HomePage'
@@ -16,19 +16,12 @@ function App() {
       <Header />
       <main className="main fillHeight counter">
         <HomePage />
-        <Scroll >
           <Info />
-        </Scroll>
-          <Projects />
-        <Scroll>
           <Services />
-        </Scroll>
-        <Scroll>
+          <Projects />
           <ContactSection />
-        </Scroll>
         <Footer />
       </main>
-
     </div>
   );
 }

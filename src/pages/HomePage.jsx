@@ -11,7 +11,7 @@ import particlesOptions from "../particules.js";
 
 // Composant Home
 const Home = () => {
-    
+
 
     const particlesInit = useCallback(main => {
         loadFull(main);
@@ -35,8 +35,7 @@ const Home = () => {
     };
 
     return (<div className="home">
-        <Particles options={particlesOptions} init={particlesInit} />
-
+        
         <motion.div
             initial="offscreen"
             whileInView="onscreen"
@@ -45,27 +44,25 @@ const Home = () => {
             variants={textVariants}
         >
             <div className="content container">
+            <Particles options={particlesOptions} init={particlesInit} />
                 <span className="secondary-text">Hello World <span className='enderscore'>__</span></span>
-                <h2 className="title">Je suis Antoine Dewas,</h2>
-                <h2 className="title experience">
-                   Developpeur Frontend</h2>
-                <h2 className="title">  <span className='web'>À la conquête du web.</span></h2>
+                <h1 className="title">Je suis Antoine Dewas,</h1>
+                <h2 className="title">
+                    <span className='web'>Developpeur Frontend </span>    </h2>
+                <h2 className="title">  <span className='web2'>À la conquête du web.</span></h2>
 
                 <motion.div
-                initial="offscreen"
-                whileInView="onscreen"
-                viewport={{ once: true, amount: 0.8 }}
-                custom={1} // Un délai pour le paragraphe
-                variants={textVariants}
-            >
-                <div className='container-link'>
-                    <a className="email-link" href="https://www.linkedin.com/in/antoine-dewas-640a191a1/">Voir mon Linkedin </a>
-                </div>
-
-            </motion.div>
+                    initial="offscreen"
+                    whileInView="onscreen"
+                    viewport={{ once: true, amount: 0.8 }}
+                    custom={1} // Un délai pour le paragraphe
+                    variants={textVariants}
+                >
+                    <div className='container-link'>
+                        <a className="email-link" href="https://www.linkedin.com/in/antoine-dewas-640a191a1/">Voir mon Linkedin </a>
+                    </div>
+                </motion.div>
             </div>
-
-           
         </motion.div>
     </div>)
 };

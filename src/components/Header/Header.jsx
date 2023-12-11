@@ -52,12 +52,13 @@ const Header = () => {
   return (
     <header className="header">
       <div className="content container">
-        
+
         {/* Menu de navigation */}
         <nav className="menu" style={{ top: mobileMenu ? "0" : "-100%" }}>
           <div className="menu__content">
-            <button type="button" className="hideMenu">
+            <button type="button" className="hideMenu" alt="button">
               <FontAwesomeIcon icon={faClose} onClick={toggleMobileMenu} />
+              <span class="sr-only">Ouvrir le menu</span>
             </button>
 
             {/* Liens de navigation */}
@@ -116,23 +117,24 @@ const Header = () => {
             </Link>
           </div>
         </nav>
-        
+
         {/* Liens vers les réseaux sociaux */}
         <nav className="social">
-          <a href="https://github.com/dexctor">
+          <a href="https://github.com/dexctor" aria-label="GitHub">
             <FontAwesomeIcon icon={faGithub} style={{ color: 'white' }} />
           </a>
-          <a href="https://www.linkedin.com/in/antoine-dewas-640a191a1/">
+          <a href="https://www.linkedin.com/in/antoine-dewas-640a191a1/" aria-label="LinkedIn">
             <FontAwesomeIcon icon={faLinkedin} style={{ color: 'white' }} />
           </a>
-          <a href="https://www.facebook.com/dewas.antoine">
+          <a href="https://www.facebook.com/dewas.antoine" aria-label="Facebook">
             <FontAwesomeIcon icon={faFacebook} style={{ color: 'white' }} />
           </a>
         </nav>
-        
+
         {/* Bouton pour afficher le menu mobile */}
         <button type="button" className="buttonShowMenu" onClick={toggleMobileMenu}>
           <FontAwesomeIcon icon={faBars} />
+          <span class="sr-only">Ouvrir le menu</span>
         </button>
       </div>
     </header>

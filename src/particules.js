@@ -28,7 +28,7 @@ const particles = {
           }
       },
       "size": {
-          "value": 4,
+          "value": 2,
           "random": true,
           "anim": {
               "enable": false,
