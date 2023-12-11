@@ -1,9 +1,9 @@
-import bookiImage from './assets/booki.png';
-import sophieBluelImage from './assets/sophie-bluel.png';
-import ninaCarducciImage from './assets/nina.png';
-import kasaImage from './assets/kasa.png';
-import grimoireImage from './assets/grimoire.png';
-import leclosImage from './assets/leclos.png';
+import bookiImage from './assets/booki.webp';
+import sophieBluelImage from './assets/sophie-bluel.webp';
+import ninaCarducciImage from './assets/nina.webp';
+import kasaImage from './assets/kasa.webp';
+import grimoireImage from './assets/grimoire.webp';
+import leclosImage from './assets/leclos.webp';
 
 const projects = [
     {
